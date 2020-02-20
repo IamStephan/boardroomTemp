@@ -1,25 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Flex, Box } from '@avvent/react-layouts';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Flex
+      flow={{
+        direction: 'column'
+      }}
+      style={{
+        minHeight: '100vh',
+        backgroundColor: '#FAFAFA',
+      }}
+    >
+      <Box
+        style={{
+          width: '100%'
+        }}
+      >
+        <h1
+          style={{
+            textAlign: 'center',
+            fontFamily: 'Arial'
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Website Coming Soon!
+        </h1>
+      </Box>
+
+      <Box
+        flex={{
+          grow: 1
+        }}
+        
+        style={{
+          width: '100%',
+          position: 'relative',
+        }}
+      >
+        <img
+          src={require('./static/ADDVERT FACEBOOK OPENING.jpg')}
+          style={{
+            position: 'absolute',
+            height: '100%',
+            width: '100%',
+            padding: 20,
+            objectFit: 'contain'
+          }}
+        />
+      </Box>
+    </Flex>
   );
 }
 
