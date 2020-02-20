@@ -39,6 +39,7 @@ function App() {
       >
         <img
           src={require('./static/ADDVERT FACEBOOK OPENING.jpg')}
+          alt='Ad for the boardroom'
           style={{
             position: 'absolute',
             height: '100%',
